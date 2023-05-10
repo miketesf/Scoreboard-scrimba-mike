@@ -1,0 +1,42 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="container" class="container">
+            <h1 class="title">Mike's BasketBall Scoreboard</h1>
+            <p>scimba.com</p>
+            <div class="score-container">
+                
+            <div>
+                <h3>HOME</h3>
+                <h1 id="home-score" class="scoreboard home">0</h1> 
+                <div class="buttons">
+                    <button class="button" onclick="addOneHome()">+1</button>
+                    <button class="button" onclick="addTwoHome()">+2</button>
+                    <button class="button" onclick="addThreeHome()">+3</button>
+                </div>
+            </div>
+            <div>
+                <h3>GUEST</h3>
+                <h1 id="guest-score" class="scoreboard guest">0</h1> 
+                <div class="buttons">
+                    <button class="button" onclick="addOneGuest()">+1</button>
+                    <button class="button" onclick="addTwoGuest()">+2</button>
+                    <button class="button" onclick="addThreeGuest()">+3</button>
+                </div>
+            </div>
+            </div>
+           <div class="final-buttons">
+            <button id="reset-btn" onclick="reset()">Reset</button>
+            <button id="save-btn" onclick="save()">Save</button>
+        </div>
+        </div>
+
+        <div class="results-section" id="results">
+                <p id="result-text">The Victory</p>
+                <button onclick="returnGame()" id="Return-to-game">Return to the Game</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
